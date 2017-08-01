@@ -1,0 +1,19 @@
+run command prompt
+cd Desktop
+md test
+cd test
+copy NUL index.html
+copy NUL styles.css
+copy NUL commands.txt
+copy index.html index_2.html
+del styles.css
+cd ..
+md destination
+move .\index_2.html ..\index_2.html
+cd test
+dir
+cd ..
+cd destination
+dir
+cd ..
+rd /s destination
